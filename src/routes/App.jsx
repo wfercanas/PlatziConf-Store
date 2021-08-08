@@ -12,7 +12,6 @@ import { NotFound } from '../containers/NotFound';
 import { AppContextProvider } from '../context/AppContext';
 
 const App = () => {
-  const 
   return (
     <AppContextProvider>
       <BrowserRouter>
@@ -25,8 +24,16 @@ const App = () => {
               path="/checkout/information"
               component={InformationContainer}
             />
-            <Route exact path="/checkout/payment" component={PaymentContainer} />
-            <Route exact path="/checkout/success" component={SuccessContainer} />
+            <Route
+              exact
+              path="/checkout/payment"
+              component={PaymentContainer}
+            />
+            <Route
+              exact
+              path="/checkout/success"
+              component={SuccessContainer}
+            />
             <Route component={NotFound} />
           </Switch>
         </Layout>
