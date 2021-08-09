@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { PayPalButton } from 'react-paypal-button';
-import { AppContext } from '../../context/AppContext';
-import '../../styles/components/Payment.css';
-import { handleSumTotal } from '../../utils/handleSumTotal';
+import { AppContext } from '../context/AppContext';
+import '../styles/components/Payment.css';
+import { handleSumTotal } from '../utils/handleSumTotal';
 
 const PaymentContainer = () => {
   const history = useHistory();
